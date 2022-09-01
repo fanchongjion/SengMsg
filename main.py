@@ -5,7 +5,9 @@ from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
+import io
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 
 def get_color():
     # 获取随机颜色
