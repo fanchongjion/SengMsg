@@ -136,7 +136,7 @@ def send_message(to_user, access_token, region_name, weather, temp, feelsLike, w
     data = {
         "touser": to_user,
         "template_id": config["template_id"],
-        "url": "https://gitee.com/hhangvip",
+        "url": "",
         "topcolor": "#FF0000",
         "data": {
             "date": {
@@ -232,4 +232,3 @@ if __name__ == "__main__":
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, feelsLike, wind_dir, note_ch, note_en)
-    os.system("pause")
